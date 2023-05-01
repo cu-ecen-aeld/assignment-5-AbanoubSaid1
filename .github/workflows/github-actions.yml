@@ -14,7 +14,7 @@ jobs:
           - name: Checkout submodules
             run : git submodule update --init --recursive
           - name: Run unit test
-            run: ./unit-test.sh
+            run: ./clean.sh
     full-test:
         container: cuaesd/aesd-autotest:assignment5
         runs-on: ubuntu-latest
